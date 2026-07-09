@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Derek Dhammaloka">
-    <meta name="description" content="Returns the number of valid squares the knight can move to or the possible positions">
+    <meta name="description"
+        content="Returns the number of valid squares the knight can move to or the possible positions">
     <meta name="keywords" content="knight, moves, squares, positions">
     <title>Knight Moves</title>
     <link rel="icon" href="favicon.ico">
@@ -12,7 +14,43 @@
     <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+    <!-- Set Up Form -->
+    <main class="container-fluid">
+        <h1 class="text-center">Knight Moves</h1>
+        <form id="knight-moves-form">
+            <div class="form-floating mb-3">
+                <select class="form-select" id="knight-col"></select>
+                <label for="knight-col">Column</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <select class="form-select" id="knight-row"></select>
+                <label for="knight-row">Row</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="show-moves">
+                <label check="form-check-label" for="show-moves">Show Moves</label>
+            </div>
+
+            <div class="d-grid gap-2 d-flex justify-content-center">
+                <button type="reset" class="btn btn-warning" id="clearBtn">Clear</button>
+            </div>
+
+
+        </form>
+
+    </main>
+
+    <!-- Display Results -->
+    <section id="results" class="container-fluid"></section>
+
+    <!-- Load Scripts -->
+    <script src="libs/jquery/jquery-3.7.1.min.js"></script>
+    <script src="libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
