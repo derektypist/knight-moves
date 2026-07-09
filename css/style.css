@@ -1,0 +1,17 @@
+/* Set Up Fonts */
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto/Roboto-Regular.ttf);
+}
+
+/* Body */
+body {
+    font-family: Roboto, Arial, Verdana, sans-serif;
+}
+
+/* Results */
+#results {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    color: #993276;
+}
